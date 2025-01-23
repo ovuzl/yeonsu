@@ -1,0 +1,299 @@
+body{
+    background-color: #F2F0EA;
+}
+.wrap{height: 100vh;}
+header .wrap {
+    background-color: #F2F0EA;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header .wrap .date {
+    font-family: "Magical";
+    color: #FF583A;
+    font-size: 171px;
+    display: flex;
+}
+
+header .wrap .date .digit {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+
+header .wrap .date .digit:nth-child(1) {
+    animation: fadeInUp 0.5s 0s ease-in forwards;
+}
+
+header .wrap .date .digit:nth-child(2) {
+    animation: fadeInUp 0.5s 0.25s ease-in forwards;
+}
+
+header .wrap .date .digit:nth-child(3) {
+    animation: fadeInUp 0.5s 0.5s ease-in forwards;
+}
+header .wrap .date .digit:nth-child(4) {
+    animation: fadeInUp 0.5s .75s ease-in forwards, skewing 0.2s 1.5s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    65% {
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes skewing {
+    0%{
+        transform: translateY(0) rotate(0);
+    }
+    100%{
+        transform-origin: left center;
+        transform: translateY(0) rotate(15deg);
+    }
+}
+
+header .wrap .tit {
+    font-family: "Axiforma";
+    font-size: 160px;
+    margin-top: -120px;
+    position: relative;
+}
+
+header .wrap .sub {
+    font-family: "Gmarket";
+    color: #FB5B31;
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: -30px;
+    margin-left: 40px;
+}
+
+.profile{}
+.profile .wrap{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile .wrap .info{
+    font-family: "Pretendard";
+}
+.profile .wrap .info img{
+    width: 316px;
+}
+.profile .wrap .info .text{}
+.profile .wrap .info .text .main{
+    font-size: 32px;
+    font-weight: 600;
+    padding: 50px 0;
+}
+.profile .wrap .info .text .main span{
+    font-weight: 800;
+}
+.profile .wrap .info .text .sub{
+    font-size: 22px;
+    color: #4B4B4B;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile .wrap .info .text .sub .name span{
+    font-size: 32px;
+    font-weight: 800;
+    color: #000000;
+}
+.profile .wrap .info .text .sub .info{
+    font-size: 18px;
+    line-height: 26px;
+    color: #A7A6A6;
+    font-weight: 600;
+}
+.profile .wrap .career{
+    max-width: 847px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-content: center;
+}
+.profile .wrap .career>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile .wrap .career .tit{
+    font-size: 26px;
+    font-weight: 700;
+}
+.profile .wrap .career .sub{
+    font-size: 20px;
+    color: #4B4B4B;
+    line-height: 32px;
+}
+.profile .wrap .career .infroduce{}
+.profile .wrap .career .education{}
+.profile .wrap .career .carrer{
+    width: 100%;
+}
+.profile .wrap .career .skills{
+    width: 100%;
+}
+.profile .wrap .career .skills img{width: 600px;}
+
+.preview{}
+.preview .wrap{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.preview .wrap .text{
+    font-family: "Pretendard";
+    position: relative;
+    margin: 60px 0;
+}
+.preview .wrap .text p{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 52px;
+}
+.preview .wrap .text span{
+    font-weight: 800;
+}
+.preview .wrap .text img{
+    width: 48px;
+    position: absolute;
+    top: -45px;
+    left: -45px;
+}
+.preview .wrap .content{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.preview .wrap .content>div{
+    height: 180px;
+    transition: all 0.65s;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.preview .wrap .content>div:hover{
+    background-size: 105% auto;
+}
+.preview .wrap .content > div a{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 40px 40px;
+    background-color: rgba(0,0,0,.65);
+    width: 100%;
+    height: 100%;
+}
+.preview .wrap .content .busanbank{
+    background-image: url(../images/busanbank.png);
+}
+.preview .wrap .content .stanry{
+    background-image: url(../images/stanry.png);
+}
+.preview .wrap .content .randys{
+    background-image: url(../images/randys-donuts.jpg);
+}
+.preview .wrap .content .info{
+    font-family: "Pretendard";
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.preview .wrap .content .info .tit{
+    font-size: 30px;
+    font-weight: 700;
+}
+.preview .wrap .content .info .sub{
+    font-size: 18px;
+    font-weight: 300;
+}
+.preview .wrap .content .button{}
+
+footer {
+    background-color: #FB5B31;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 42px;
+    margin-left: 300px;
+    position: relative;
+}
+
+footer .wrap p {
+    color: #ffffff;
+}
+
+footer .wrap .tit {
+    font-family: "Magical";
+    font-size: 100px;
+}
+
+footer .wrap .sub {
+    font-family: "Axiforma";
+    font-size: 80px;
+}
+
+footer .wrap .kor {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 56px;
+    opacity: 50%;
+    padding-top: 50px;
+}
+
+footer .wrap .star .star2,
+footer .wrap .star .star3 {
+    position: absolute;
+    animation: float 4s ease-in-out infinite;
+}
+
+footer .wrap .star .star2 {
+    width: 48px;
+    top: 120px;
+    left: -60px;
+    animation-delay: 0s;
+}
+
+footer .wrap .star .star3 {
+    width: 100px;
+    bottom: 200px;
+    right: 340px;
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
